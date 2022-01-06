@@ -1,0 +1,16 @@
+@import './var';
+
+h1 {
+  background-color: cadetblue;
+}
+
+p {
+  color: $p_color;
+  background-color: $p_bg_color;
+  font-size: 60px;
+}
+
+body {
+  background-image: url('../images/user00000.jpg');
+  color: white;
+}
