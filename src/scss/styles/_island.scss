@@ -1,0 +1,16 @@
+.island-wrap {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+}
+.island {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  background-image: url('../images/common/island.png');
+  background-size: contain;
+  height: 299px;
+  width: 918px;
+}
