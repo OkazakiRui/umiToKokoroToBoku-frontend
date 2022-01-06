@@ -11,13 +11,21 @@ main {
   position: relative;
   overflow: hidden;
 }
-main * {
+
+main *,
+main *::after,
+main *::before {
   position: absolute;
 }
 
 // z-index を設定
 .filter {
-  z-index: $z-filter;
+  &::before {
+    z-index: $z-allFilter;
+  }
+  &::after {
+    z-index: $z-filter;
+  }
 }
 .ui-alert {
   z-index: $z-uiAlert;

@@ -44,26 +44,30 @@
 
 .filter {
   inset: 0;
-  mix-blend-mode: color-burn;
-  pointer-events: none;
-  &::before {
+  &::before,
+  &::after {
     content: '';
-    position: absolute;
     display: block;
     inset: 0;
+    pointer-events: none;
+  }
+  &::before {
     background: rgba(255, 255, 255, 0.3);
     mix-blend-mode: color-dodge;
   }
-  &.morning {
+  &::after {
+    mix-blend-mode: color-burn;
+  }
+  &.morning::after {
     background: rgba(255, 238, 87, 0.35);
   }
-  &.daytime {
+  &.daytime::after {
     background: rgba(133, 165, 43, 0.35);
   }
-  &.evening {
+  &.evening::after {
     background: rgba(251, 19, 19, 0.35);
   }
-  &.night {
+  &.night::after {
     background: rgba(19, 28, 251, 0.35);
   }
 }
