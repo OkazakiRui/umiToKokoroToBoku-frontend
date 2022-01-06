@@ -1,0 +1,39 @@
+.background {
+  height: 100%;
+  width: 100%;
+
+  &.morning {
+    background: linear-gradient(180deg, #a7d5dc 0%, #fcf4dd 100%);
+  }
+  &.daytime {
+    background: linear-gradient(180deg, #8ad3e0 0%, #c1f5ee 100%);
+  }
+  &.evening {
+    background: linear-gradient(180deg, #e76fa9 0%, #ffdbdc 100%);
+  }
+  &.night {
+    background: linear-gradient(180deg, #302b75 0%, #45589b 100%);
+  }
+}
+
+.ocean {
+  &.morning {
+  }
+  &.daytime {
+  }
+  &.evening {
+  }
+  &.night {
+  }
+}
+
+.filter {
+  &.morning {
+  }
+  &.daytime {
+  }
+  &.evening {
+  }
+  &.night {
+  }
+}

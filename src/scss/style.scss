@@ -1,3 +1,9 @@
 @import 'ress';
-@import './var';
-@import './zIndex';
+// 変数
+@import './config/var';
+// z-index
+@import './config/z-index';
+// レイアウトや汎用class
+@import './styles/common';
+// 時間によって変更される背景等
+@import './styles/dynamic-background';
