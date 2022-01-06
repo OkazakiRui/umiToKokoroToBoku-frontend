@@ -43,12 +43,27 @@
 }
 
 .filter {
+  inset: 0;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: color-dodge;
+  }
   &.morning {
+    background: rgba(255, 238, 87, 0.35);
   }
   &.daytime {
+    background: rgba(133, 165, 43, 0.35);
   }
   &.evening {
+    background: rgba(251, 19, 19, 0.35);
   }
   &.night {
+    background: rgba(19, 28, 251, 0.35);
   }
 }
