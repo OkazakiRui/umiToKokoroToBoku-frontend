@@ -21,6 +21,13 @@
 }
 
 .ocean {
+  width: 100vw;
+  min-width: 100%;
+  height: 100%;
+  margin-top: 451px;
+  left: 50%;
+  transform: translateX(-50%);
+
   &.morning {
     background: linear-gradient(180deg, #bfd9e1 0%, #d3f8e0 100%);
   }
