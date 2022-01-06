@@ -1,3 +1,7 @@
+.background-wrap {
+  height: 100%;
+  width: 100%;
+}
 .background {
   height: 100%;
   width: 100%;
@@ -18,12 +22,16 @@
 
 .ocean {
   &.morning {
+    background: linear-gradient(180deg, #bfd9e1 0%, #d3f8e0 100%);
   }
   &.daytime {
+    background: linear-gradient(180deg, #8ee3f5 0%, #4492da 100%);
   }
   &.evening {
+    background: linear-gradient(180deg, #ffcfac 0%, #ff91b8 100%);
   }
   &.night {
+    background: linear-gradient(180deg, #002366 0%, #00022b 100%);
   }
 }
 
