@@ -1,0 +1,60 @@
+body,
+main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+main * {
+  position: absolute;
+}
+
+// z-index を設定
+.filter {
+  z-index: $z-filter;
+}
+.ui-alert {
+  z-index: $z-uiAlert;
+}
+.ui-window {
+  z-index: $z-uiWindow;
+}
+.ui-window-background {
+  z-index: $z-uiWindowBackground;
+}
+.ui-button {
+  z-index: $z-uiButton;
+}
+.island-stone {
+  z-index: $z-islandStone;
+}
+.character-dress {
+  z-index: $z-characterDress;
+}
+.character {
+  z-index: $z-character;
+}
+.island-object {
+  z-index: $z-islandObject;
+}
+.island {
+  z-index: $z-island;
+}
+.ocean-object {
+  z-index: $z-oceanObject;
+}
+.ocean {
+  z-index: $z-ocean;
+}
+.background-object {
+  z-index: $z-backgroundObject;
+}
+.cloud {
+  z-index: $z-cloud;
+}
+.stars {
+  z-index: $z-stars;
+}
+.background {
+  z-index: $z-background;
+}
