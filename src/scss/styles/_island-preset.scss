@@ -28,3 +28,43 @@
     }
   }
 }
+.preset3 {
+  .island-object {
+    &::before {
+      width: 280px;
+      height: 280px;
+      left: 227px;
+      top: 238px;
+      background-image: url('../images/island-object/preset3-left-object.png');
+    }
+  }
+}
+.preset4 {
+  .island-object {
+    &::before {
+      width: 96px;
+      height: 96px;
+      left: 320px;
+      top: 382px;
+      background-image: url('../images/island-object/preset4-left-object.png');
+    }
+  }
+}
+.preset5 {
+  .island-object {
+    &::before {
+      width: 96px;
+      height: 96px;
+      left: 256px;
+      top: 372px;
+      background-image: url('../images/island-object/preset5-left-object.png');
+    }
+    &::after {
+      width: 136px;
+      height: 136px;
+      left: 344px;
+      top: 363px;
+      background-image: url('../images/island-object/preset5-right-object.png');
+    }
+  }
+}
