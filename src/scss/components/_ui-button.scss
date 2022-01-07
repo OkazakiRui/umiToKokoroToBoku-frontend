@@ -1,0 +1,20 @@
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  filter: $drop-shadow;
+  background-color: $c-white;
+}
+
+.ui-button {
+  &__tweet-btn {
+    width: 86px;
+    height: 86px;
+  }
+  &__item-btn {
+    position: initial;
+    width: 54px;
+    height: 54px;
+  }
+}

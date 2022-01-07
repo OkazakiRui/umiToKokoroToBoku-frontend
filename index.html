@@ -8,15 +8,47 @@
   </head>
   <body>
     <main>
-      <!-- フィルターを表示する -->
-      <div class="filter evening"></div>
       <!-- UI関係を表示する -->
       <div class="ui-wrap">
         <div class="ui-alert"></div>
         <div class="ui-window"></div>
         <div class="ui-window-background"></div>
-        <div class="ui-button"></div>
+        <div class="ui-button">
+          <button class="icon-btn ui-button__tweet-btn">
+            <img src="./images/ui/tweet_btn.svg" alt="呟きのアイコン" />
+          </button>
+          <ul class="ui-button__items">
+            <li class="ui-button__item">
+              <button class="icon-btn ui-button__item-btn">
+                <img
+                  src="./images/ui/nav-dress_up.svg"
+                  alt="キャラクターの着せ替えのアイコン"
+                />
+              </button>
+            </li>
+            <li class="ui-button__item">
+              <button class="icon-btn ui-button__item-btn">
+                <img
+                  src="./images/ui/nav-island.svg"
+                  alt="島の模様替えのアイコン"
+                />
+              </button>
+            </li>
+            <li class="ui-button__item">
+              <button class="icon-btn ui-button__item-btn">
+                <img src="./images/ui/nav-sound.svg" alt="音量のアイコン" />
+              </button>
+            </li>
+            <li class="ui-button__item">
+              <button class="icon-btn ui-button__item-btn">
+                <img src="./images/ui/nav-settings.svg" alt="設定のアイコン" />
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- フィルターを表示する -->
+      <div class="filter daytime"></div>
       <!-- 島関係を表示する -->
       <div class="island-wrap">
         <div class="island-stone"></div>
@@ -25,14 +57,14 @@
         <div class="island-object"></div>
         <div class="island"></div>
         <div class="ocean-object"></div>
-        <div class="ocean evening"></div>
+        <div class="ocean daytime"></div>
       </div>
       <!-- 背景関係を表示する -->
       <div class="background-wrap">
         <div class="background-object"></div>
         <div class="cloud"></div>
         <div class="stars"></div>
-        <div class="background evening"></div>
+        <div class="background daytime"></div>
       </div>
     </main>
     <script src="./dist/main.js"></script>

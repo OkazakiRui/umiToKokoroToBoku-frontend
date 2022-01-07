@@ -1,0 +1,18 @@
+.ui-button {
+  inset: 0;
+  &__tweet-btn {
+    left: 24px;
+    top: 20px;
+  }
+  &__items {
+    top: 20px;
+    right: 24px;
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    width: fit-content;
+    height: fit-content;
+    position: initial;
+  }
+}

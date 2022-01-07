@@ -12,10 +12,17 @@ main {
   overflow: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 main *,
 main *::after,
 main *::before {
   position: absolute;
+}
+.ui-wrap {
+  inset: 0;
 }
 
 // z-index を設定

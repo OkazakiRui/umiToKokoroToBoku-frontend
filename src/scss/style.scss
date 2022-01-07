@@ -5,9 +5,14 @@
 @import './config/z-index';
 // 全体の初期設定
 @import './styles/common';
-// 時間によって変更される背景等
-@import './styles/dynamic-background';
+
+// components
+// uiボタン
+@import './components/ui-button';
 
 // styles
 // 島のスタイル
 @import './styles/island';
+// 時間によって変更される背景等
+@import './styles/dynamic-background';
+@import './styles/ui';
