@@ -5,21 +5,7 @@
 .background {
   height: 100%;
   width: 100%;
-
-  &.morning {
-    background: linear-gradient(180deg, #a7d5dc 0%, #fcf4dd 100%);
-  }
-  &.daytime {
-    background: linear-gradient(180deg, #8ad3e0 0%, #c1f5ee 100%);
-  }
-  &.evening {
-    background: linear-gradient(180deg, #e76fa9 0%, #ffdbdc 100%);
-  }
-  &.night {
-    background: linear-gradient(180deg, #246579 0%, #314486 100%);
-  }
 }
-
 .ocean {
   width: 100vw;
   min-width: 100%;
@@ -27,21 +13,7 @@
   margin-top: 451px;
   left: 50%;
   transform: translateX(-50%);
-
-  &.morning {
-    background: linear-gradient(180deg, #acffe1 0%, #53beec 100%);
-  }
-  &.daytime {
-    background: linear-gradient(180deg, #8ee3f5 0%, #4492da 100%);
-  }
-  &.evening {
-    background: linear-gradient(180deg, #ffcfac 0%, #ff91b8 100%);
-  }
-  &.night {
-    background: linear-gradient(180deg, #5eacc5 0%, #9483ff 100%);
-  }
 }
-
 .filter {
   inset: 0;
   &::before,
@@ -58,16 +30,49 @@
   &::after {
     mix-blend-mode: color-burn;
   }
-  &.morning::after {
+}
+
+.morning {
+  .background {
+    background: linear-gradient(180deg, #a7d5dc 0%, #fcf4dd 100%);
+  }
+  .ocean {
+    background: linear-gradient(180deg, #acffe1 0%, #53beec 100%);
+  }
+  .filter::after {
     background: rgba(255, 238, 87, 0.35);
   }
-  &.daytime::after {
+}
+.daytime {
+  .background {
+    background: linear-gradient(180deg, #8ad3e0 0%, #c1f5ee 100%);
+  }
+  .ocean {
+    background: linear-gradient(180deg, #8ee3f5 0%, #4492da 100%);
+  }
+  .filter::after {
     background: rgba(133, 165, 43, 0.35);
   }
-  &.evening::after {
+}
+.evening {
+  .background {
+    background: linear-gradient(180deg, #e76fa9 0%, #ffdbdc 100%);
+  }
+  .ocean {
+    background: linear-gradient(180deg, #ffcfac 0%, #ff91b8 100%);
+  }
+  .filter::after {
     background: rgba(251, 19, 19, 0.35);
   }
-  &.night::after {
+}
+.night {
+  .background {
+    background: linear-gradient(180deg, #246579 0%, #314486 100%);
+  }
+  .ocean {
+    background: linear-gradient(180deg, #5eacc5 0%, #9483ff 100%);
+  }
+  .filter::after {
     background: rgba(19, 28, 251, 0.35);
   }
 }
