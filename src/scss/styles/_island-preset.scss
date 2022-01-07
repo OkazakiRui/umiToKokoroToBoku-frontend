@@ -1,0 +1,30 @@
+.island-object {
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    background-size: contain;
+  }
+}
+.preset1 {
+  .island-object {
+  }
+}
+.preset2 {
+  .island-object {
+    &::before {
+      width: 208px;
+      height: 208px;
+      left: 248px;
+      top: 288px;
+      background-image: url('../images/island-object/preset2-left-object.png');
+    }
+    &::after {
+      width: 288px;
+      height: 288px;
+      left: 532px;
+      top: 184px;
+      background-image: url('../images/island-object/preset2-right-object.png');
+    }
+  }
+}
