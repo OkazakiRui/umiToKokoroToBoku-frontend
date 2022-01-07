@@ -5,6 +5,10 @@
   border-radius: 8px;
   filter: $drop-shadow;
   background-color: $c-white;
+  transition: filter 0.2s;
+  &:hover {
+    filter: $drop-shadow $brightness;
+  }
 }
 
 .ui-button {
