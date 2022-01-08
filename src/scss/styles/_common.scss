@@ -1,3 +1,8 @@
+// 非表示
+.d-hidden {
+  display: none !important;
+}
+
 // 初期設定
 body,
 main {
@@ -11,15 +16,12 @@ main {
   position: relative;
   overflow: hidden;
 }
-
 img {
   pointer-events: none;
 }
-
 li {
   list-style: none;
 }
-
 main *,
 main *::after,
 main *::before {
