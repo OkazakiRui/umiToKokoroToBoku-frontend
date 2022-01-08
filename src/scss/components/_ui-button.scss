@@ -1,4 +1,4 @@
-.icon-btn {
+.icon-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,11 +12,11 @@
 }
 
 .ui-button {
-  &__tweet-btn {
+  &__tweet-button {
     width: 86px;
     height: 86px;
   }
-  &__item-btn {
+  &__item-button {
     position: initial;
     width: 54px;
     height: 54px;
