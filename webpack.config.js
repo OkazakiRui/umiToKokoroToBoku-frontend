@@ -2,6 +2,8 @@
 const path = require('path');
 //MiniCssExtractPlugin の読み込み
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+//LiveReloadPlugin の読み込み
+const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
   //エントリポイント（デフォルトと同じなので省略可）
@@ -52,11 +54,18 @@ module.exports = {
       // 抽出する CSS のファイル名
       filename: 'style.css',
     }),
+    new LiveReloadPlugin(),
   ],
   //source-map タイプのソースマップを出力
   devtool: 'source-map',
   // node_modules を監視（watch）対象から除外
   watchOptions: {
     ignored: /node_modules/, //正規表現で指定
+  },
+  devServer: {
+    static: {
+      directory: __dirname,
+    },
+    watchFiles: ['index.html', 'src/*'],
   },
 };
