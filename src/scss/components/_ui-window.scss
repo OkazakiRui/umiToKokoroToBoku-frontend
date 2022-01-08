@@ -1,0 +1,60 @@
+.ui-window {
+  &__tweet {
+    &-window {
+      width: 463px;
+      height: 296px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      filter: $drop-shadow;
+      padding: 20px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      * {
+        position: static;
+      }
+    }
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &-back {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $c-white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-send {
+      width: 112px;
+      height: 40px;
+      border-radius: 8px;
+      border: $c-mint 1px solid;
+      background-color: $c-white;
+      color: $c-mint;
+      font-weight: bold;
+      padding-left: 16px;
+      padding-right: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-textarea {
+      width: 416px;
+      height: 200px;
+      border-radius: 8px;
+      padding: 8px;
+      resize: none;
+      background-color: $c-white;
+      color: $c-body;
+      font-size: 12px;
+      line-height: 30px;
+      letter-spacing: 0.2em;
+    }
+  }
+}

@@ -1,4 +1,9 @@
+// リセットcss
 @import 'ress';
+
+// fonts
+@import './fonts/NotoSansJP';
+
 // 変数
 @import './config/var';
 // z-index
@@ -9,6 +14,8 @@
 // components
 // uiボタン
 @import './components/ui-button';
+// ui window
+@import './components/ui-window';
 
 // styles
 // 島のスタイル

@@ -10,11 +10,29 @@
     <!-- main class一覧 -->
     <!-- morning, daytime, evening, night -->
     <!-- preset1, preset2, preset3, preset4, preset5 -->
-    <main class="morning preset3">
+    <main class="evening preset3">
       <!-- UI関係を表示する -->
       <div class="ui-wrap">
         <div class="ui-alert"></div>
-        <div class="ui-window"></div>
+        <div class="ui-window">
+          <div class="ui-window__tweet-window">
+            <div class="ui-window__tweet-buttons">
+              <button class="ui-window__tweet-back">
+                <img
+                  src="./images/ui/back_arrow.svg"
+                  alt="戻るボタンのアイコン"
+                />
+              </button>
+              <button class="ui-window__tweet-send">
+                <img
+                  src="./images/ui/send_icon.svg"
+                  alt="送信ボタンのアイコン"
+                />送信
+              </button>
+            </div>
+            <textarea class="ui-window__tweet-textarea"></textarea>
+          </div>
+        </div>
         <div class="ui-window-background"></div>
         <div class="ui-button">
           <!-- tweetボタン -->
