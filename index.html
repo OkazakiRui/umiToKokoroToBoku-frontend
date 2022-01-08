@@ -15,15 +15,16 @@
       <div class="ui-wrap">
         <div class="ui-alert"></div>
         <div class="ui-window">
-          <div class="ui-window__tweet-window">
-            <div class="ui-window__tweet-buttons">
+          <!-- メッセージボトルの入力画面 -->
+          <div id="tweetWindow" class="d-hidden ui-window__tweet-window">
+            <div id="tweetBackButton" class="ui-window__tweet-buttons">
               <button class="ui-window__tweet-back">
                 <img
                   src="./images/ui/back_arrow.svg"
                   alt="戻るボタンのアイコン"
                 />
               </button>
-              <button class="ui-window__tweet-send">
+              <button id="tweetSendButton" class="ui-window__tweet-send">
                 <img
                   src="./images/ui/send_icon.svg"
                   alt="送信ボタンのアイコン"
