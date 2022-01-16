@@ -28,7 +28,7 @@ const moonCalc = function (hour, min) {
  */
 const planetMove = (sunElement, moonElement, hour, min) => {
   sunElement.style.transform = `rotate(${sunCalc(hour, min)}deg)`;
-  moonElement.style.transform = `rotate(${sunCalc(hour, min)}deg)`;
+  moonElement.style.transform = `rotate(${moonCalc(hour, min)}deg)`;
 };
 
 export default planetMove;

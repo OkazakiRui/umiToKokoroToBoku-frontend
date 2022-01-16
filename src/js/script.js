@@ -3,3 +3,4 @@ import '../scss/style.scss';
 
 // アクション
 import './scripts/buttonAction';
+import './scripts/dynamicAction';
