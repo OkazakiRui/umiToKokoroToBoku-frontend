@@ -13,7 +13,7 @@ tweetBackButton.addEventListener('click', () =>
 
 const tweetSendButton = document.getElementById('tweetSendButton');
 const tweetTextArea = document.getElementById('tweetTextArea');
-tweetSendButton.addEventListener('click', (e) => {
+tweetSendButton.addEventListener('click', () => {
   if (!tweetTextArea.value) {
     notyf.error('メッセージが入力されていません!');
     return;
