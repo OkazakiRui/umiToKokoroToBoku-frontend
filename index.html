@@ -17,8 +17,8 @@
         <div class="ui-window">
           <!-- メッセージボトルの入力画面 -->
           <div id="tweetWindow" class="d-hidden ui-window__tweet-window">
-            <div id="tweetBackButton" class="ui-window__tweet-buttons">
-              <button class="ui-window__tweet-back">
+            <div class="ui-window__tweet-buttons">
+              <button id="tweetBackButton" class="ui-window__tweet-back">
                 <img
                   src="./images/ui/back_arrow.svg"
                   alt="戻るボタンのアイコン"
@@ -31,7 +31,10 @@
                 />送信
               </button>
             </div>
-            <textarea class="ui-window__tweet-textarea"></textarea>
+            <textarea
+              id="tweetTextArea"
+              class="ui-window__tweet-textarea"
+            ></textarea>
           </div>
         </div>
         <div class="ui-window-background"></div>
