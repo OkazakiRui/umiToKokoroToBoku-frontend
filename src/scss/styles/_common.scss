@@ -3,6 +3,11 @@
   display: none !important;
 }
 
+// 通知の設定
+.notyf {
+  z-index: $z-notyf;
+}
+
 // 初期設定
 html {
   font-family: 'Noto Sans JP', sans-serif;
