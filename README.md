@@ -1,10 +1,5 @@
-# webpackSass
-sassが使える環境を作成した。
-## 導入
+## setup
 ```
 npm i
-```
-## 実行
-```
-npm run watch
+npm run build
 ```
