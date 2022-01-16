@@ -1,0 +1,15 @@
+.stars {
+  &__sun,
+  &__moon {
+    top: 50%;
+    left: calc(50% + 400px);
+    display: block;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-0deg) translateX(-100px);
+    transform-origin: -400px center;
+  }
+  &__moon {
+    filter: drop-shadow(0px 0px 180px #86e2ff);
+  }
+}
