@@ -20,5 +20,6 @@ tweetSendButton.addEventListener('click', (e) => {
   }
   // ToDo: 問題なく呟けた場合に発生させる通知を作成する
   sendPost(tweetTextArea.value);
+  tweetTextArea.value = '';
   changeDisplay(displayData.default);
 });
