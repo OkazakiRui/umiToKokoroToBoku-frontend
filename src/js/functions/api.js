@@ -18,7 +18,11 @@ export const sendPost = async (message) => {
     },
     body: JSON.stringify(data),
   };
-  const response = await fetch('http://localhost:8080/api/posts', parms);
+  const response = await fetch('http://localhost:8080/api/posts', parms).catch(
+    (error) => {
+      notyf.error(`${error}`);
+    }
+  );
   response.status === 201
     ? notyf.success('メッセージが正常に登録されました!')
     : notyf.error(`${response.status}: ${response.statusText}`);
