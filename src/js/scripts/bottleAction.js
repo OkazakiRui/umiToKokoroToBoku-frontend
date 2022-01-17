@@ -14,6 +14,7 @@ const createBottleElement = (message) => {
   imageElement.textContent = message;
   return imageElement;
 };
+
 document
   .getElementById('bottleMessages')
   .appendChild(createBottleElement('Honcicab'));

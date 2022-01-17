@@ -36,6 +36,23 @@
               class="ui-window__tweet-textarea"
             ></textarea>
           </div>
+
+          <!-- メッセージボトルを開いた時の画面 -->
+          <div id="bottleWindow" class="d-hidden ui-window__tweet-window">
+            <div class="ui-window__tweet-buttons">
+              <button id="bottleCloseButton" class="ui-window__tweet-back">
+                <img
+                  src="./images/ui/close_button.svg"
+                  alt="閉じるボタンのアイコン"
+                />
+              </button>
+            </div>
+            <textarea
+              id="bottleTextArea"
+              class="ui-window__tweet-textarea"
+              disabled
+            ></textarea>
+          </div>
         </div>
         <div class="ui-window-background"></div>
         <div class="ui-button">
@@ -74,7 +91,7 @@
           </ul>
           <!-- メッセージボトルを開く -->
           <button
-            id="openMessageButton"
+            id="bottleButton"
             class="ui-button__open-message-button"
           ></button>
         </div>
