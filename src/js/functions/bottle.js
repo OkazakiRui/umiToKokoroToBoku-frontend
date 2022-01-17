@@ -18,14 +18,18 @@ export const createBottleElement = (message) => {
   return imageElement;
 };
 
-const bottleMessages = document.getElementById('bottleMessages');
 /**
  * 30%の確率でボトルメッセージを配置する
  * @returns {any}
  */
+const bottleMessages = document.getElementById('bottleMessages');
+const bottleButton = document.getElementById('bottleButton');
 export const randomCreateBottle = async () => {
-  if (Math.random() * 100 < 70) return;
+  if (Math.random() * 100 < 70) {
+    bottleButton.remove();
+    return;
+  }
   const posts = await getRandomPost();
   setState(posts, posts);
-  bottleMessages.appendChild(createBottleElement(post[0].post_text));
+  bottleMessages.appendChild(createBottleElement(posts[0].post_text));
 };

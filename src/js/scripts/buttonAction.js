@@ -28,6 +28,7 @@ const bottleButton = document.getElementById('bottleButton');
 const bottleTextArea = document.getElementById('bottleTextArea');
 const bottleMessages = document.getElementById('bottleMessages');
 bottleButton.addEventListener('click', () => {
+  if (!bottleMessages.querySelector('img')) return;
   changeDisplay(displayData.bottle);
   bottleTextArea.value = bottleMessages.querySelector('img').textContent;
 });
