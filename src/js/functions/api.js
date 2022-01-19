@@ -1,5 +1,4 @@
 import notyf from './notyf';
-// Todo: fetch先を変更する
 
 /**
  * ツイートを投稿する
@@ -18,11 +17,12 @@ export const sendPost = async (message) => {
     },
     body: JSON.stringify(data),
   };
-  const response = await fetch('http://localhost:8080/api/posts', parms).catch(
-    (error) => {
-      notyf.error(error);
-    }
-  );
+  const response = await fetch(
+    'http://153.126.190.250:8080/api/posts',
+    parms
+  ).catch((error) => {
+    notyf.error(error);
+  });
   response.status === 201
     ? notyf.success('メッセージが正常に登録されました!')
     : notyf.error(`${response.status}: ${response.statusText}`);
@@ -34,7 +34,7 @@ export const sendPost = async (message) => {
  */
 export const getRandomPost = async () => {
   const response = await fetch(
-    `http://localhost:8080/api/posts/getRandomPost`
+    `http://153.126.190.250:8080/api/posts/getRandomPost`
   ).catch((error) => notyf.error(error));
   if (response.status !== 200)
     notyf.error(`${response.status}: ${response.statusText}`);
