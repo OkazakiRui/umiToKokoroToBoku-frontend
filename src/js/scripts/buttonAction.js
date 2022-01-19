@@ -3,7 +3,7 @@ import { changeDisplay } from '../functions/display.js';
 import { sendPost } from '../functions/api.js';
 import notyf from '../functions/notyf.js';
 import { islandPreset } from '../config/dressUpItems.js';
-import { getState } from '../config/state.js';
+import { getState, setState } from '../config/state.js';
 
 // つぶやくボタン
 const tweetButton = document.getElementById('tweetButton');
@@ -67,11 +67,22 @@ islandDressUpButton.addEventListener('click', () => {
     });
   });
 });
+// 戻るボタンの処理
 const dressUpBackButton = document.getElementById('dressUpBackButton');
 dressUpBackButton.addEventListener('click', () => {
   // メインのクラスを付け替えている
   main.classList.remove(...Object.keys(islandPreset));
   const globalstate = getState();
   main.classList.add(globalstate.islandPreset);
+  changeDisplay(displayData.default);
+});
+// 保存ボタンの処理
+const dressUpSaveButton = document.getElementById('dressUpSaveButton');
+dressUpSaveButton.addEventListener('click', () => {
+  const nowPreset = editList.querySelector(
+    '.ui-window__edit-item--selected img'
+  ).alt;
+  setState('islandPreset', nowPreset);
+  notyf.success('保存に成功しました!');
   changeDisplay(displayData.default);
 });
