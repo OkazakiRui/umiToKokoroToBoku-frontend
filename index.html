@@ -38,19 +38,24 @@
           </div>
 
           <!-- キャラクターの着せ替えの画面 -->
-          <div id="dressUpWindow" class="d-hidden ui-window__edit-window">
+          <div id="islandDressUpWindow" class="d-hidden ui-window__edit-window">
             <div class="ui-window__edit-buttons">
-              <button id="dressUpBackButton" class="ui-window__edit-back">
+              <button id="islandDressUpBackButton" class="ui-window__edit-back">
                 <img
                   src="./images/ui/back_arrow.svg"
                   alt="戻るボタンのアイコン"
                 />
               </button>
-              <button id="dressUpSaveButton" class="ui-window__edit-save">
+              <button id="islandDressUpSaveButton" class="ui-window__edit-save">
                 保存
               </button>
             </div>
-            <div id="editList" class="ui-window__edit-list"></div>
+            <div id="islandDressList" class="ui-window__edit-list"></div>
+            <div id="islandIndicator" class="ui-window__edit-islandIndicator">
+              <button
+                class="ui-window__edit-dot ui-window__edit-dot--selected"
+              ></button>
+            </div>
             <div class="ui-window__edit-arrows">
               <button class="ui-window__edit-arrow">
                 <img src="./images/ui/list-arrow.svg" alt="左のページに行く" />

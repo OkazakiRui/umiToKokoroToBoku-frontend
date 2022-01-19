@@ -42,11 +42,11 @@ bottleCloseButton.addEventListener('click', () =>
 // 島の着せ替え
 const main = document.getElementById('main');
 const islandDressUpButton = document.getElementById('islandDressUpButton');
-const editList = document.getElementById('editList');
+const islandDressList = document.getElementById('islandDressList');
 islandDressUpButton.addEventListener('click', () => {
   changeDisplay(displayData.islandDressUpButton);
   const dressUpButtons = document.querySelectorAll('.ui-window__edit-item');
-  editList
+  islandDressList
     .querySelector('.ui-window__edit-item--selected')
     .classList.remove('ui-window__edit-item--selected');
   // グローバルstateを参照して現在のプリセットにカーソルが行く
@@ -57,7 +57,7 @@ islandDressUpButton.addEventListener('click', () => {
   dressUpButtons.forEach((el) => {
     el.addEventListener('click', () => {
       // 全ての選択済みプリセットを削除する
-      editList
+      islandDressList
         .querySelector('.ui-window__edit-item--selected')
         .classList.remove('ui-window__edit-item--selected');
       el.classList.add('ui-window__edit-item--selected');
@@ -68,8 +68,10 @@ islandDressUpButton.addEventListener('click', () => {
   });
 });
 // 戻るボタンの処理
-const dressUpBackButton = document.getElementById('dressUpBackButton');
-dressUpBackButton.addEventListener('click', () => {
+const islandDressUpBackButton = document.getElementById(
+  'islandDressUpBackButton'
+);
+islandDressUpBackButton.addEventListener('click', () => {
   // メインのクラスを付け替えている
   main.classList.remove(...Object.keys(islandPreset));
   const globalstate = getState();
@@ -77,9 +79,11 @@ dressUpBackButton.addEventListener('click', () => {
   changeDisplay(displayData.default);
 });
 // 保存ボタンの処理
-const dressUpSaveButton = document.getElementById('dressUpSaveButton');
-dressUpSaveButton.addEventListener('click', () => {
-  const nowPreset = editList.querySelector(
+const islandDressUpSaveButton = document.getElementById(
+  'islandDressUpSaveButton'
+);
+islandDressUpSaveButton.addEventListener('click', () => {
+  const nowPreset = islandDressList.querySelector(
     '.ui-window__edit-item--selected img'
   ).alt;
   setState('islandPreset', nowPreset);

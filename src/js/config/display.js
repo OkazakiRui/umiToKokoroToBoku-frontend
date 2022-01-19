@@ -3,7 +3,7 @@ export const displayElements = {
   navigationBar: document.getElementById('navigationBar'),
   tweetWindow: document.getElementById('tweetWindow'),
   bottleWindow: document.getElementById('bottleWindow'),
-  dressUpWindow: document.getElementById('dressUpWindow'),
+  islandDressUpWindow: document.getElementById('islandDressUpWindow'),
 };
 export const displayData = {
   default: {
@@ -11,21 +11,21 @@ export const displayData = {
     navigationBar: true,
     tweetWindow: false,
     bottleWindow: false,
-    dressUpWindow: false,
+    islandDressUpWindow: false,
   },
   tweet: {
     tweetButton: false,
     navigationBar: true,
     tweetWindow: true,
     bottleWindow: false,
-    dressUpWindow: false,
+    islandDressUpWindow: false,
   },
   bottle: {
     tweetButton: false,
     navigationBar: true,
     tweetWindow: false,
     bottleWindow: true,
-    dressUpWindow: false,
+    islandDressUpWindow: false,
   },
   dressUp: {},
   islandDressUpButton: {
@@ -33,6 +33,6 @@ export const displayData = {
     navigationBar: false,
     tweetWindow: false,
     bottleWindow: false,
-    dressUpWindow: true,
+    islandDressUpWindow: true,
   },
 };

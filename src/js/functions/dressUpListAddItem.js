@@ -23,12 +23,12 @@ const createDressUpItem = (imageSrc, alt, selected = false) => {
  * リストにデータを挿入します。
  * @returns {void}
  */
-const editList = document.getElementById('editList');
+const islandDressList = document.getElementById('islandDressList');
 export const dressUpIslandItem = () => {
   Object.keys(islandPreset).forEach((key) => {
     const { name, imageSrc } = islandPreset[key];
     const globalStaet = getState();
-    editList.appendChild(
+    islandDressList.appendChild(
       createDressUpItem(imageSrc, name, globalStaet.islandPreset === key)
     );
   });
