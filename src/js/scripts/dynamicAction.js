@@ -16,3 +16,20 @@ const dynamicFunction = () => {
 };
 dynamicFunction();
 window.setInterval(() => dynamicFunction(), 60000);
+
+// =================================================
+// 動画撮影用の処理
+// let hour = 0,
+//   min = 0;
+// window.setInterval(() => {
+//   if (min === 60) {
+//     min = 0;
+//     hour++;
+//     if (hour === 25) hour = 0;
+//   } else {
+//     min += 5;
+//   }
+//   planetMove(sun, moon, hour, min);
+//   judgmentTimeframe(hour);
+// }, 100);
+// =================================================
