@@ -15,7 +15,7 @@ const createDressUpItem = (imageSrc, alt, selected = false) => {
   );
   const imageElement = document.createElement('img');
   imageElement.src = imageSrc;
-  imageElement.alt = `${alt}のプレビュー画像`;
+  imageElement.alt = alt;
   buttonElement.appendChild(imageElement);
   return buttonElement;
 };
