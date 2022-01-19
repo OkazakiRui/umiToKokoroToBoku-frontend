@@ -1,0 +1,118 @@
+.character-wrap {
+  width: 160px;
+  height: 160px;
+  top: 335px;
+  left: 420px;
+  transform: rotateY(0deg);
+  animation: walk 30s infinite linear;
+
+  div {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+  }
+
+  img {
+    display: block;
+    height: 160px;
+  }
+}
+
+@keyframes walk {
+  0% {
+    top: calc(335px + 0px);
+    left: calc(420px + 0px);
+    transform: rotateY(0deg);
+  }
+  1% {
+    transform: rotateY(180deg);
+  }
+  9% {
+    top: calc(335px + 20px);
+    left: calc(420px + 120px);
+    transform: rotateY(180deg);
+  }
+  10% {
+    transform: rotateY(0deg);
+  }
+  19% {
+    top: calc(335px + 20px);
+    left: calc(420px + 80px);
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(0deg);
+  }
+  29% {
+    top: calc(335px + 20px);
+    left: calc(420px + 80px);
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(180deg);
+  }
+  39% {
+    top: calc(335px + 20px);
+    left: calc(420px + 90px);
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+  49% {
+    top: calc(335px + -10px);
+    left: calc(420px + 0px);
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  59% {
+    top: calc(335px + -10px);
+    left: calc(420px + 0px);
+    transform: rotateY(0deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+  69% {
+    top: calc(335px + 0px);
+    left: calc(420px + -90px);
+    transform: rotateY(0deg);
+  }
+  70% {
+    transform: rotateY(180deg);
+  }
+  79% {
+    top: calc(335px + 0px);
+    left: calc(420px + -90px);
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(180deg);
+  }
+  79% {
+    top: calc(335px + 10px);
+    left: calc(420px + 60px);
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  89% {
+    top: calc(335px + 20px);
+    left: calc(420px + 60px);
+    transform: rotateY(0deg);
+  }
+  90% {
+    transform: rotateY(0deg);
+  }
+  99% {
+    top: calc(335px + 0px);
+    left: calc(420px + 30px);
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

@@ -64,6 +64,9 @@ main *::before {
 .island-stone {
   z-index: $z-islandStone;
 }
+.character-wrap {
+  z-index: $z-characterWrap;
+}
 .character-dress {
   z-index: $z-characterDress;
 }
