@@ -5,4 +5,3 @@ import '../scss/style.scss';
 import './scripts/tabOpenAction';
 import './scripts/buttonAction';
 import './scripts/dynamicAction';
-import './scripts/bottleAction';
