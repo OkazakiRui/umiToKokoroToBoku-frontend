@@ -37,6 +37,38 @@
             ></textarea>
           </div>
 
+          <!-- キャラクターの着せ替えの画面 -->
+          <div id="dressUpWindow" class="d-hidden ui-window__edit-window">
+            <div class="ui-window__edit-buttons">
+              <button id="dressUpBackButton" class="ui-window__edit-back">
+                <img
+                  src="./images/ui/back_arrow.svg"
+                  alt="戻るボタンのアイコン"
+                />
+              </button>
+              <button id="dressUpSaveButton" class="ui-window__edit-save">
+                保存
+              </button>
+            </div>
+            <div class="ui-window__edit-list">
+              <div
+                class="ui-window__edit-item ui-window__edit-item--selected"
+              ></div>
+              <div class="ui-window__edit-item"></div>
+              <div class="ui-window__edit-item"></div>
+              <div class="ui-window__edit-item"></div>
+              <div class="ui-window__edit-item"></div>
+              <div class="ui-window__edit-item"></div>
+            </div>
+            <div class="ui-window__edit-arrows">
+              <button class="ui-window__edit-arrow">
+                <img src="./images/ui/list-arrow.svg" alt="左のページに行く" />
+              </button>
+              <button class="ui-window__edit-arrow">
+                <img src="./images/ui/list-arrow.svg" alt="右のページに行く" />
+              </button>
+            </div>
+          </div>
           <!-- メッセージボトルを開いた時の画面 -->
           <div id="bottleWindow" class="d-hidden ui-window__tweet-window">
             <div class="ui-window__tweet-buttons">
@@ -63,7 +95,10 @@
           <!-- navigation bar -->
           <ul id="navigationBar" class="ui-button__items">
             <li class="ui-button__item">
-              <button class="icon-button ui-button__item-button">
+              <button
+                id="dressUpButton"
+                class="icon-button ui-button__item-button"
+              >
                 <img
                   src="./images/ui/nav-dress_up.svg"
                   alt="キャラクターの着せ替えのアイコン"

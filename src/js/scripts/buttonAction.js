@@ -23,7 +23,7 @@ tweetSendButton.addEventListener('click', () => {
   changeDisplay(displayData.default);
 });
 
-// ボトルメッセージ
+// ボトルメッセージを開く
 const bottleButton = document.getElementById('bottleButton');
 const bottleTextArea = document.getElementById('bottleTextArea');
 const bottleMessages = document.getElementById('bottleMessages');
@@ -36,3 +36,16 @@ const bottleCloseButton = document.getElementById('bottleCloseButton');
 bottleCloseButton.addEventListener('click', () =>
   changeDisplay(displayData.default)
 );
+
+// キャラクターの着せ替え
+const dressUpButton = document.getElementById('dressUpButton');
+dressUpButton.addEventListener('click', () => {
+  changeDisplay(displayData.dressUp);
+});
+const dressUpBackButton = document.getElementById('dressUpBackButton');
+dressUpBackButton.addEventListener('click', () =>
+  changeDisplay(displayData.default)
+);
+
+// 開発用
+changeDisplay(displayData.dressUp);
