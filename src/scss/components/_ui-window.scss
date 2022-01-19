@@ -112,6 +112,7 @@
       letter-spacing: 0.2em;
     }
     &-list {
+      margin-top: 20px;
       width: 792px;
       display: flex;
       gap: 24px;
@@ -159,6 +160,21 @@
       &:last-of-type {
         transform: rotateY(180deg);
         right: 24px;
+      }
+    }
+    &-indicator {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    &-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $c-gray;
+      &--selected {
+        background-color: $c-mint;
       }
     }
   }
