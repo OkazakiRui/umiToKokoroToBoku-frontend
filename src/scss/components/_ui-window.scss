@@ -25,6 +25,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: filter 0.1s;
+      &:hover {
+        filter: $brightness;
+      }
     }
     &-back {
       width: 32px;
@@ -42,6 +46,7 @@
       font-weight: bold;
       padding-left: 16px;
       padding-right: 26px;
+      gap: 8px;
     }
 
     &-textarea {
@@ -79,11 +84,18 @@
       justify-content: space-between;
       width: 100%;
     }
+    &-back,
+    &-save {
+      background-color: $c-white;
+      transition: filter 0.1s;
+      &:hover {
+        filter: $brightness;
+      }
+    }
     &-back {
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background-color: $c-white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -91,7 +103,6 @@
     &-save {
       width: 112px;
       height: 40px;
-      background-color: $c-white;
       border: 2px solid $c-mint;
       color: $c-mint;
       border-radius: 8px;
@@ -111,8 +122,18 @@
       background-color: $c-white;
       border: 2px solid $c-gray;
       border-radius: 8px;
+      overflow: hidden;
+      transition: filter 0.1s;
+      &:hover {
+        filter: $brightness;
+      }
       &--selected {
         border: 2px solid $c-mint;
+      }
+      img {
+        object-fit: cover;
+        width: 110px;
+        height: 110px;
       }
     }
     &-arrows {
@@ -128,7 +149,10 @@
       border-radius: 50%;
       background-color: $c-white;
       top: 50%;
-
+      transition: filter 0.1s;
+      &:hover {
+        filter: $brightness;
+      }
       &:first-of-type {
         left: 24px;
       }
