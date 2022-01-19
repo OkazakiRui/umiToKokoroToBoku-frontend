@@ -11,4 +11,10 @@ const GLOBAL_STATE = {
  */
 export const setState = (key, value) => {
   GLOBAL_STATE[key] = value;
+  localStorage.setItem(key, value);
 };
+export const getState = () => ({
+  username: GLOBAL_STATE.username,
+  islandPreset: GLOBAL_STATE.islandPreset,
+  characterDress: GLOBAL_STATE.characterDress,
+});
