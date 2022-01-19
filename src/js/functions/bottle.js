@@ -25,7 +25,7 @@ const bottleMessages = document.getElementById('bottleMessages');
 const bottleButton = document.getElementById('bottleButton');
 export const randomCreateBottle = async () => {
   if (Math.random() * 100 < 70) {
-    bottleButton.remove();
+    bottleButton.classList.add('d-hidden');
     return;
   }
   const posts = await getRandomPost();
