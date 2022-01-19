@@ -37,15 +37,12 @@ bottleCloseButton.addEventListener('click', () =>
   changeDisplay(displayData.default)
 );
 
-// キャラクターの着せ替え
-const dressUpButton = document.getElementById('dressUpButton');
-dressUpButton.addEventListener('click', () => {
-  changeDisplay(displayData.dressUp);
+// 島の着せ替え
+const islandDressUpButton = document.getElementById('islandDressUpButton');
+islandDressUpButton.addEventListener('click', () => {
+  changeDisplay(displayData.islandDressUpButton);
 });
 const dressUpBackButton = document.getElementById('dressUpBackButton');
 dressUpBackButton.addEventListener('click', () =>
   changeDisplay(displayData.default)
 );
-
-// 開発用
-changeDisplay(displayData.dressUp);

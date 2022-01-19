@@ -27,12 +27,12 @@ export const displayData = {
     bottleWindow: true,
     dressUpWindow: false,
   },
-  dressUp: {
+  dressUp: {},
+  islandDressUpButton: {
     tweetButton: false,
     navigationBar: false,
     tweetWindow: false,
     bottleWindow: false,
     dressUpWindow: true,
   },
-  islandChange: {},
 };

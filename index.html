@@ -50,16 +50,7 @@
                 保存
               </button>
             </div>
-            <div class="ui-window__edit-list">
-              <div
-                class="ui-window__edit-item ui-window__edit-item--selected"
-              ></div>
-              <div class="ui-window__edit-item"></div>
-              <div class="ui-window__edit-item"></div>
-              <div class="ui-window__edit-item"></div>
-              <div class="ui-window__edit-item"></div>
-              <div class="ui-window__edit-item"></div>
-            </div>
+            <div id="editList" class="ui-window__edit-list"></div>
             <div class="ui-window__edit-arrows">
               <button class="ui-window__edit-arrow">
                 <img src="./images/ui/list-arrow.svg" alt="左のページに行く" />
@@ -95,10 +86,7 @@
           <!-- navigation bar -->
           <ul id="navigationBar" class="ui-button__items">
             <li class="ui-button__item">
-              <button
-                id="dressUpButton"
-                class="icon-button ui-button__item-button"
-              >
+              <button class="icon-button ui-button__item-button">
                 <img
                   src="./images/ui/nav-dress_up.svg"
                   alt="キャラクターの着せ替えのアイコン"
@@ -106,7 +94,10 @@
               </button>
             </li>
             <li class="ui-button__item">
-              <button class="icon-button ui-button__item-button">
+              <button
+                class="icon-button ui-button__item-button"
+                id="islandDressUpButton"
+              >
                 <img
                   src="./images/ui/nav-island.svg"
                   alt="島の模様替えのアイコン"
