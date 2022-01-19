@@ -1,8 +1,7 @@
-import { displayData } from './display';
-
 const GLOBAL_STATE = {
-  display: displayData.default,
-  posts: [],
+  username: '',
+  islandPreset: '',
+  characterDress: '',
 };
 
 /**

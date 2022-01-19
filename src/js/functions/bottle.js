@@ -1,4 +1,3 @@
-import { setState } from '../config/state';
 import { getRandomPost } from './api';
 
 /**
@@ -30,6 +29,5 @@ export const randomCreateBottle = async () => {
     return;
   }
   const posts = await getRandomPost();
-  setState(posts, posts);
   bottleMessages.appendChild(createBottleElement(posts[0].post_text));
 };
