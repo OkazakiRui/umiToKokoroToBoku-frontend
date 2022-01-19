@@ -42,12 +42,27 @@
 .preset4 {
   .island-object {
     &::before {
-      width: 96px;
-      height: 96px;
-      left: 320px;
-      top: 382px;
-      background-image: url('../images/island-object/preset4-left-object.png');
+      width: 200px;
+      height: 200px;
+      left: 260px;
+      top: 280px;
+      background-image: url('../images/island-object/crab.png');
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+      background-position: left center;
+      animation: crab 3s infinite steps(28);
     }
+  }
+}
+@keyframes crab {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: left calc(-200px * 28) center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 .preset5 {
@@ -66,5 +81,38 @@
       top: 363px;
       background-image: url('../images/island-object/preset5-right-object.png');
     }
+  }
+}
+.preset6 {
+  .island-object {
+    &::before {
+      width: 350px;
+      height: 350px;
+      left: 72px;
+      top: 107px;
+      background-image: url('../images/island-object/lighthouse.png');
+      background-repeat: no-repeat;
+      background-size: auto 350px;
+      background-position: left center;
+      animation: lighthouse 5s infinite steps(32);
+    }
+    &::after {
+      width: 208px;
+      height: 208px;
+      left: 548px;
+      top: 288px;
+      background-image: url('../images/island-object/preset2-left-object.png');
+    }
+  }
+}
+@keyframes lighthouse {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: left calc(-350px * 32) center;
+  }
+  100% {
+    background-position: left center;
   }
 }
