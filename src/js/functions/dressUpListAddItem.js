@@ -21,7 +21,7 @@ const createDressUpItem = (imageSrc, alt, selected = false) => {
 };
 
 /**
- * リストにデータを挿入します。
+ * リストに島の着せ替えデータを挿入します。
  * @returns {void}
  */
 const islandDressList = document.getElementById('islandDressList');
@@ -36,7 +36,7 @@ export const dressUpIslandItem = () => {
 };
 
 /**
- * リストにデータを挿入します。
+ * リストにキャラクターの着せ替えデータを挿入します。
  * @returns {void}
  */
 const characterDressList = document.getElementById('characterDressList');
