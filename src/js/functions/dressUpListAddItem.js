@@ -33,23 +33,3 @@ export const dressUpIslandItem = () => {
     );
   });
 };
-
-/**
- * インジケーターのドットを生成します
- * @returns {HTMLButtonElement}
- */
-const createIndicatorDot = (selected = false) => {
-  const buttonElement = document.createElement('button');
-  buttonElement.classList.add(
-    'ui-window__edit-dot',
-    selected && 'ui-window__edit-dot--selected'
-  );
-  return buttonElement;
-};
-
-const islandIndicator = document.getElementById('islandIndicator');
-export const createIslandIndicator = () => {
-  for (let i = 0; i < parseInt(Object.keys(islandPreset).length / 6); i++) {
-    islandIndicator.appendChild(createIndicatorDot(i === 0));
-  }
-};

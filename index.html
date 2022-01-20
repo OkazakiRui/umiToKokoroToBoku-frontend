@@ -37,8 +37,11 @@
             ></textarea>
           </div>
 
-          <!-- キャラクターの着せ替えの画面 -->
-          <div id="islandDressUpWindow" class="d-hidden ui-window__edit-window">
+          <!-- 島の着せ替えの画面 -->
+          <div
+            id="islandDressUpWindow"
+            class="d-hidden ui-window__edit-window swiper"
+          >
             <div class="ui-window__edit-buttons">
               <button id="islandDressUpBackButton" class="ui-window__edit-back">
                 <img
@@ -50,19 +53,10 @@
                 保存
               </button>
             </div>
-            <div id="islandDressList" class="ui-window__edit-list"></div>
             <div
-              id="islandIndicator"
-              class="ui-window__edit-island-indicator"
+              id="islandDressList"
+              class="ui-window__edit-list swiper-wrapper"
             ></div>
-            <div class="ui-window__edit-arrows">
-              <button class="ui-window__edit-arrow">
-                <img src="./images/ui/list-arrow.svg" alt="左のページに行く" />
-              </button>
-              <button class="ui-window__edit-arrow">
-                <img src="./images/ui/list-arrow.svg" alt="右のページに行く" />
-              </button>
-            </div>
           </div>
           <!-- メッセージボトルを開いた時の画面 -->
           <div id="bottleWindow" class="d-hidden ui-window__tweet-window">

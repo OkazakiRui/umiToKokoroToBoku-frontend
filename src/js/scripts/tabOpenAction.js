@@ -4,6 +4,7 @@ import {
   dressUpIslandItem,
   createIslandIndicator,
 } from '../functions/dressUpListAddItem';
+import '../functions/swiper';
 
 // localstorageにデータがあればそれをglobalstateにセットする
 setState(
@@ -30,7 +31,5 @@ main.classList.add(islandPreset);
 
 // 島の着せ替えを適応している。
 dressUpIslandItem();
-// 島の着せ替えのインジケーターを作成する
-createIslandIndicator();
 //  bottleを30%の確率で生成する
 randomCreateBottle();
