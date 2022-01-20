@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./dist/style.css" />
-    <title>Document</title>
+    <title>うみとこころとぼく</title>
   </head>
   <body>
     <!-- main class一覧 -->
@@ -38,10 +38,7 @@
           </div>
 
           <!-- 島の着せ替えの画面 -->
-          <div
-            id="islandDressUpWindow"
-            class="d-hidden ui-window__edit-window swiper"
-          >
+          <div id="islandDressUpWindow" class="d-hidden ui-window__edit-window">
             <div class="ui-window__edit-buttons">
               <button id="islandDressUpBackButton" class="ui-window__edit-back">
                 <img
@@ -53,11 +50,34 @@
                 保存
               </button>
             </div>
-            <div
-              id="islandDressList"
-              class="ui-window__edit-list swiper-wrapper"
-            ></div>
+            <div id="islandDressList" class="ui-window__edit-list"></div>
           </div>
+
+          <!-- キャラクターの着せ替えの画面 -->
+          <div
+            id="characterDressUpWindow"
+            class="d-hidden ui-window__edit-window"
+          >
+            <div class="ui-window__edit-buttons">
+              <button
+                id="characterDressUpBackButton"
+                class="ui-window__edit-back"
+              >
+                <img
+                  src="./images/ui/back_arrow.svg"
+                  alt="戻るボタンのアイコン"
+                />
+              </button>
+              <button
+                id="characterDressUpSaveButton"
+                class="ui-window__edit-save"
+              >
+                保存
+              </button>
+            </div>
+            <div id="characterDressList" class="ui-window__edit-list"></div>
+          </div>
+
           <!-- メッセージボトルを開いた時の画面 -->
           <div id="bottleWindow" class="d-hidden ui-window__tweet-window">
             <div class="ui-window__tweet-buttons">
@@ -84,7 +104,10 @@
           <!-- navigation bar -->
           <ul id="navigationBar" class="ui-button__items">
             <li class="ui-button__item">
-              <button class="icon-button ui-button__item-button">
+              <button
+                id="characterDressUpButton"
+                class="icon-button ui-button__item-button"
+              >
                 <img
                   src="./images/ui/nav-dress_up.svg"
                   alt="キャラクターの着せ替えのアイコン"
@@ -93,8 +116,8 @@
             </li>
             <li class="ui-button__item">
               <button
-                class="icon-button ui-button__item-button"
                 id="islandDressUpButton"
+                class="icon-button ui-button__item-button"
               >
                 <img
                   src="./images/ui/nav-island.svg"
@@ -127,7 +150,7 @@
         <div class="island-stone"></div>
         <div id="characterWrap" class="character-wrap">
           <div class="character-dress">
-            <img src="./images/character/walk/cap.png" />
+            <img id="characterDressImage" />
           </div>
           <div class="character">
             <img src="./images/character/walk/character.png" />

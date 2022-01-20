@@ -44,8 +44,10 @@ const main = document.getElementById('main');
 const islandDressUpButton = document.getElementById('islandDressUpButton');
 const islandDressList = document.getElementById('islandDressList');
 islandDressUpButton.addEventListener('click', () => {
-  changeDisplay(displayData.islandDressUpButton);
-  const dressUpButtons = document.querySelectorAll('.ui-window__edit-item');
+  changeDisplay(displayData.islandDressUp);
+  const dressUpButtons = islandDressList.querySelectorAll(
+    '.ui-window__edit-item'
+  );
   islandDressList
     .querySelector('.ui-window__edit-item--selected')
     .classList.remove('ui-window__edit-item--selected');
@@ -84,9 +86,65 @@ const islandDressUpSaveButton = document.getElementById(
 );
 islandDressUpSaveButton.addEventListener('click', () => {
   const nowPreset = islandDressList.querySelector(
-    '.ui-window__edit-item--selected img'
+    '#islandDressUpWindow .ui-window__edit-item--selected img'
   ).alt;
   setState('islandPreset', nowPreset);
+  notyf.success('保存に成功しました!');
+  changeDisplay(displayData.default);
+});
+
+// キャラクターの着せ替え
+const characterDressUpButton = document.getElementById(
+  'characterDressUpButton'
+);
+const characterDressList = document.getElementById('characterDressList');
+characterDressUpButton.addEventListener('click', () => {
+  changeDisplay(displayData.characterDressUp);
+  const dressUpButtons = characterDressList.querySelectorAll(
+    '.ui-window__edit-item'
+  );
+  characterDressList
+    .querySelector('.ui-window__edit-item--selected')
+    .classList.remove('ui-window__edit-item--selected');
+  // グローバルstateを参照して現在のプリセットにカーソルが行く
+  const globalstate = getState();
+  document
+    .querySelector(`img[alt="${globalstate.characterDress}"]`)
+    .parentElement.classList.add('ui-window__edit-item--selected');
+  dressUpButtons.forEach((el) => {
+    el.addEventListener('click', () => {
+      // 全ての選択済みプリセットを削除する
+      characterDressList
+        .querySelector('.ui-window__edit-item--selected')
+        .classList.remove('ui-window__edit-item--selected');
+      el.classList.add('ui-window__edit-item--selected');
+      const alt = el.querySelector('img').alt;
+      const characterDressImage = document.getElementById(
+        'characterDressImage'
+      );
+      characterDressImage.src = `./images/character/walk/${alt}.png`;
+    });
+  });
+});
+// 戻るボタンの処理
+const characterDressUpBackButton = document.getElementById(
+  'characterDressUpBackButton'
+);
+characterDressUpBackButton.addEventListener('click', () => {
+  const characterDressImage = document.getElementById('characterDressImage');
+  const { characterDress } = getState();
+  characterDressImage.src = `./images/character/walk/${characterDress}.png`;
+  changeDisplay(displayData.default);
+});
+// 保存ボタンの処理
+const characterDressUpSaveButton = document.getElementById(
+  'characterDressUpSaveButton'
+);
+characterDressUpSaveButton.addEventListener('click', () => {
+  const nowDress = characterDressList.querySelector(
+    '.ui-window__edit-item--selected img'
+  ).alt;
+  setState('characterDress', nowDress);
   notyf.success('保存に成功しました!');
   changeDisplay(displayData.default);
 });

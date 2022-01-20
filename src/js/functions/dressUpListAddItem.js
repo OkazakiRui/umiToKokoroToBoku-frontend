@@ -1,4 +1,4 @@
-import { islandPreset } from '../config/dressUpItems';
+import { characterAndDress, islandPreset } from '../config/dressUpItems';
 import { getState } from '../config/state';
 
 /**
@@ -19,6 +19,7 @@ const createDressUpItem = (imageSrc, alt, selected = false) => {
   buttonElement.appendChild(imageElement);
   return buttonElement;
 };
+
 /**
  * リストにデータを挿入します。
  * @returns {void}
@@ -31,5 +32,22 @@ export const dressUpIslandItem = () => {
     islandDressList.appendChild(
       createDressUpItem(imageSrc, name, globalStaet.islandPreset === key)
     );
+  });
+};
+
+/**
+ * リストにデータを挿入します。
+ * @returns {void}
+ */
+const characterDressList = document.getElementById('characterDressList');
+export const dressUpCharacterItem = () => {
+  Object.keys(characterAndDress.walk).forEach((key) => {
+    if (key !== 'spritLength') {
+      const imageSrc = `./images/character/walk/${key}.png`;
+      const globalStaet = getState();
+      characterDressList.appendChild(
+        createDressUpItem(imageSrc, key, globalStaet.characterDress === key)
+      );
+    }
   });
 };

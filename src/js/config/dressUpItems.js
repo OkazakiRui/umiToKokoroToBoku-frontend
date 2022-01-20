@@ -28,9 +28,9 @@ export const islandPreset = {
 export const characterAndDress = {
   walk: {
     spritLength: 15,
+    character: 'character',
     cap: 'cap',
     catEar: 'catEar',
-    character: 'character',
     cheek: 'cheek',
     leaf: 'leaf',
     mouseEar: 'mouseEar',
@@ -40,10 +40,10 @@ export const characterAndDress = {
   },
   apple: {
     spritLength: 15,
+    character: 'character',
     bag: 'bag',
     cap: 'cap',
     catEar: 'catEar',
-    character: 'character',
     cheek: 'cheek',
     leaf: 'leaf',
     mouseEar: 'mouseEar',
@@ -53,9 +53,9 @@ export const characterAndDress = {
   },
   surprised: {
     spritLength: 28,
+    character: 'character',
     cap: 'cap',
     catEar: 'catEar',
-    character: 'character',
     cheek: 'cheek',
     leaf: 'leaf',
     mouseEar: 'mouseEar',
@@ -65,10 +65,10 @@ export const characterAndDress = {
   },
   sit: {
     spritLength: 15,
+    character: 'character',
     bag: 'bag',
     cap: 'cap',
     catEar: 'catEar',
-    character: 'character',
     cheek: 'cheek',
     leaf: 'leaf',
     mouseTail: 'mouseTail',
