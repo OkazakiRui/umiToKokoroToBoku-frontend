@@ -1,6 +1,7 @@
 .stars {
   &__sun,
   &__moon {
+    transition: all 0.2s;
     top: 50%;
     left: calc(50% + 400px);
     display: block;

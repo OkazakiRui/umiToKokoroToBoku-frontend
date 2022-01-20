@@ -1,9 +1,11 @@
+import { characterAndDress } from '../config/dressUpItems';
 import { getState, setState } from '../config/state';
 import { randomCreateBottle } from '../functions/bottle';
 import {
   dressUpCharacterItem,
   dressUpIslandItem,
 } from '../functions/dressUpListAddItem';
+import { sprite } from '../functions/sprite';
 
 // localstorageにデータがあればそれをglobalstateにセットする
 setState(
@@ -39,3 +41,7 @@ dressUpIslandItem();
 dressUpCharacterItem();
 //  bottleを30%の確率で生成する
 randomCreateBottle();
+
+setInterval(() => {
+  sprite(characterAndDress.walk.spritLength);
+}, 100);

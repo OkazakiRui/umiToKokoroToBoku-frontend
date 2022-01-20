@@ -27,7 +27,7 @@ window.setInterval(() => dynamicFunction(), 60000);
 //     hour++;
 //     if (hour === 25) hour = 0;
 //   } else {
-//     min += 5;
+//     min += 20;
 //   }
 //   planetMove(sun, moon, hour, min);
 //   judgmentTimeframe(hour);
