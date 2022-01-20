@@ -1,10 +1,6 @@
 import { getState, setState } from '../config/state';
 import { randomCreateBottle } from '../functions/bottle';
-import {
-  dressUpIslandItem,
-  createIslandIndicator,
-} from '../functions/dressUpListAddItem';
-import '../functions/swiper';
+import { dressUpIslandItem } from '../functions/dressUpListAddItem';
 
 // localstorageにデータがあればそれをglobalstateにセットする
 setState(
