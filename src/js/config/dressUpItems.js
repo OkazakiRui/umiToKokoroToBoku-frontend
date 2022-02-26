@@ -37,6 +37,7 @@ export const characterAndDress = {
     mouseTail: 'mouseTail',
     necktie: 'necktie',
     nose: 'nose',
+    bag: 'bag',
   },
   apple: {
     spritLength: 15,
